@@ -1,19 +1,20 @@
-moduleId: quickstart-example
+# You can rename this module ID
+moduleId: dataland-starter
 
 buildCommand: npm run build
 
 workers:
-  - workerId: hello
-    scriptPath: dist/hello.bundle.js
+  - workerId: mirror
+    scriptPath: dist/mirror.bundle.js
 
 tables:
-  - tableId: greetings-table
-    tableName: greetings
+  - tableId: mirror-table
+    tableName: mirror
     autoMigrate: true
     columnDescriptors:
-      - columnId: name-column
-        columnName: name
+      - columnId: original
+        columnName: original
         dataType: string
-      - columnId: greeting-column
-        columnName: greeting
+      - columnId: duplicate
+        columnName: duplicate
         dataType: string
