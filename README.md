@@ -1,4 +1,4 @@
-# Quickstart Example
+# Dataland Starter
 
 ```sh
 npm install
