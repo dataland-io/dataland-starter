@@ -1,0 +1,22 @@
+# TODO: You can rename this module ID
+moduleId: dataland-starter
+
+buildCommand: npm run build
+
+# workers:
+#   - workerId: hello
+#     scriptPath: dist/hello.bundle.js
+#     triggers:
+#       transaction: {}
+
+tables:
+  - tableName: example
+    autoMigrate: true
+    columnDescriptors:
+      - columnName: url_col_example
+        dataType: string
+        columnAnnotations:
+          dataland.io/column-display-config: |
+            {
+              "type": "url"
+            }
